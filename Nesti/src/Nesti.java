@@ -30,7 +30,12 @@ public class Nesti {
 		
 		MyConnexion.openConnection();
 		MyConnexion.testConnection();
-		
+		QueryUser.readAll();
+		System.out.println("Entrer un pseudo");
+		String sc = Clavier.lireString();
+		QueryUser.create(sc);
+		QueryUser.updateUserUsername("lola", 3);
+		QueryUser.deleteByUsername("lola");
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -60,7 +65,8 @@ public class Nesti {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 426, 423);
+		frame.setResizable(false);
+		frame.setBounds(100, 100, 414, 410);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
