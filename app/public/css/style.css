@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+width: 0px; /* remove scrollbar space */
+background: transparent; /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #d8d8d8;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* login_content */
+
+.body-login {
+    background-image: url('../images/bg-nesti.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login#container {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.login form {
+    width: 100%;
+    padding: 50px 100px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.login#container h1 {
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: .6em;
+}
+
+.login input[type=text],
+.login input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login input[type=submit] {
+    background-color: #4eb3bf;
+    color: white;
+    padding: 5px 30px;
+    margin: 21px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.login input[type=submit]:hover {
+    background-color: #4eb3bf;
+    color: #131313;
+}
+
+.login .ctn-form {
+    display: flex;
+}
+
+.login .ctn-form i {
+    align-self: center;
+    margin-right: 1em;
+}
+
+.login label {
+    margin-left: 1.8em;
+}
+
+.login .ctn-submit {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.body-login img {
+    height: 100px;
+    width: 100px;
+    margin-top: 80px;
+    left: 150px;
+    position: absolute;
+}
+
+/* recipe_content */
+
+.nav-g {
+    padding: inherit !important;
+    -webkit-box-shadow: 0px 3px 17px -8px rgba(0, 0, 0, 0.91);
+    -moz-box-shadow: 0px 3px 17px -8px rgba(0, 0, 0, 0.91);
+    box-shadow: 0px 3px 17px -8px rgba(0, 0, 0, 0.91);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.nav-g .navbar-nav {
+    display: inline-flex;
+    flex-direction: inherit;
+    width: 100%;
+
+}
+
+.nav-g .ul-part {
+    display: contents;
+    padding: 1.5rem 1rem;
+}
+
+.nav-g .ul-first {
+    width: 70%;
+    background-color: #005663;
+}
+
+.nav-g .ul-second {
+    width: 30%;
+}
+
+.nav-g .nav-item a {
+    padding: .5em 1em;
+}
+
+.nav-g .ul-first .nav-item a {
+    color: white;
+}
+
+.nav-g .ul-second .nav-item a {
+    color: rgb(0, 0, 0);
+}
+
+.nav-g .ul-first .nav-item.active a {
+    background-color: #fac02e;
+    color: black;
+}
+
+.nav-g .ul-first .nav-item a {
+    background-color: #00828f;
+}
+
+.table-recipe .table td, .table-recipe .table th  {
+    vertical-align: inherit;
+}
+
+.btn-arrow-top {
+    background-image: url("../images/icons/up-svg.png");
+    background-repeat: no-repeat;
+}
+
+.btn-arrow-bot {
+    background-image: url("../images/icons/up-svg.png");
+}
+
+.btn-arrow-del {
+    background-image: url("../images/icons/up-svg.png");
+}
+
+/* recipe/create */
+
+.rc .nbrBtnStep {
+    height: 2em;
+    width:2em;
+    background-color: #00828f;
+}
+
+.rc .nbrBtnStep.active-step {
+    background-color: #fac02e;
+}
+
+input#file-upload-button {
+    background-color: #FF0000;
+}
+
+#rc-step1 label ,
+.input-step1,
+#rc-step2 label,
+.input-step2,
+#rc-step2 option {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#recipe-name {
+    padding-left: .5rem;
+}
+
+#recipe-img {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.input-step1[type="number"] {
+    text-align: center;
+}
+.input-step1[type='number']::-webkit-inner-spin-button, 
+.input-step1[type='number']::-webkit-outer-spin-button { 
+    opacity: 1;
+}
+
+#validationStep1Name {
+    display: none;
+}
+
+.btn-up-prepare[disabled="true"],.btn-down-prepare[disabled="true"],.btn-delete-prepare[disabled="true"] {
+    filter: opacity(0.5);
+}
+
+.nbrBtnSteps , .nbrBtnStep , .step{
+    font-family: 'Nunito', sans-serif;
+}
+
+.progress-bar {
+    background-color: #fac02e !important;
+}
+
+/* Modal delete */
+
+#modalDelete .modal-content{
+    background-color: rgb(228, 228, 228);
+}
+
+#modalDelete .modal-content{
+    background-color: rgb(228, 228, 228);
+}
+
+#modalDelete .modal-body {
+    padding: 0;
+}
+
+#modalDelete .modal-body div:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+#modalDelete .modal-body div:nth-child(1) i {
+    font-size: 2rem;
+}
+
+#modalDelete .modal-body div:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    font-size: .9rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 670px !important;
+        margin: 1.75rem auto;
+    }
+}
+
+.rc#rc-4 #progress-recipe-create-valid {
+    width : 100%;
+}
+
+.rc#rc-4 .nbrBtnStep {
+    background-color: #fac02e;
+}
+
+thead {
+    background-color: #00828f;
+    color: white;
+}
